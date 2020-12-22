@@ -1,0 +1,9 @@
+a, b = input().split()
+a = int(a)
+b = int(b)
+x = 0
+while b >= a:
+    a *= 3
+    b *= 2
+    x += 1
+print(x)
