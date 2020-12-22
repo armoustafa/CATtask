@@ -1,0 +1,18 @@
+n, k = input().split()
+ar = input().split()
+a = 0
+sum = 0
+for i in ar:
+    if int(i) > int(k) :
+        a+=1
+        ar.reverse()
+        break
+    else:
+        sum+=1
+if a == 1:
+    for j in ar:
+        if int(j) > int(k) :
+            break
+        else:
+            sum+=1
+print(sum)
